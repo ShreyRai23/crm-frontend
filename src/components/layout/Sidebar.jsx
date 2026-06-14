@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 
 const NAV = [
-  { to: '/',          label: 'Dashboard',  icon: LayoutDashboard },
+  { to: '/dashboard', label: 'Dashboard',  icon: LayoutDashboard },
   { to: '/customers', label: 'Customers',  icon: Users           },
   { to: '/campaigns', label: 'Campaigns',  icon: Megaphone       },
   { to: '/ai',        label: 'AI Studio',  icon: Bot             },
@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       {/* Logo — clicking navigates to dashboard */}
-      <Link to="/" className="sidebar-logo sidebar-logo-link">
+      <Link to="/dashboard" className="sidebar-logo sidebar-logo-link">
         <div className="sidebar-logo-text">
           Xeno<span>.</span>CRM
         </div>
@@ -30,7 +30,7 @@ export default function Sidebar() {
           <NavLink
             key={to}
             to={to}
-            end={to === '/'}
+            end={to === '/dashboard'}
             className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
           >
             <Icon className="nav-icon" />

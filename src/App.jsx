@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
 
 import Shell from './components/layout/Shell';
+import Landing from './pages/Landing';
 import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
 import CustomerDetail from './pages/CustomerDetail';
@@ -27,8 +28,13 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Shell />}>
-            <Route index element={<Dashboard />} />
+          {/* Public landing page — no Shell */}
+          <Route path="/" element={<Landing />} />
+
+          {/* App Shell — pathless layout route, wraps all app pages */}
+          {/* Dashboard moves to /dashboard; all other routes stay the same */}
+          <Route element={<Shell />}>
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="customers" element={<Customers />} />
             <Route path="customers/:id" element={<CustomerDetail />} />
             <Route path="campaigns" element={<Campaigns />} />

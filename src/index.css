@@ -167,6 +167,15 @@ img { max-width: 100%; display: block; }
 .sidebar-logo {
   padding: 20px 20px 16px;
   border-bottom: 1px solid var(--border);
+  display: block;
+  text-decoration: none;
+}
+.sidebar-logo-link {
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.sidebar-logo-link:hover {
+  background: rgba(255, 77, 0, 0.05);
 }
 .sidebar-logo-text {
   font-family: var(--font-display);
@@ -290,7 +299,7 @@ img { max-width: 100%; display: block; }
 }
 .topbar-right { display: flex; align-items: center; gap: 12px; }
 
-/* ─── Cards ──────────────────────────────────────────────────────────────── */
+/* ─── Cards ─────────────────────────────────────────────────────────────── */
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -298,10 +307,14 @@ img { max-width: 100%; display: block; }
   padding: 24px;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
-.card:hover { border-color: var(--border-strong); }
+.card:hover {
+  border-color: rgba(255, 77, 0, 0.35);
+  box-shadow: 0 0 0 1px rgba(255, 77, 0, 0.12), 0 0 24px rgba(255, 77, 0, 0.08);
+}
+/* keep .card-hover as alias for backwards compatibility */
 .card-hover:hover {
-  border-color: rgba(255,77,0,0.2);
-  box-shadow: var(--shadow-orange);
+  border-color: rgba(255, 77, 0, 0.45);
+  box-shadow: 0 0 0 1px rgba(255, 77, 0, 0.18), 0 0 32px rgba(255, 77, 0, 0.12);
 }
 .card-orange-border {
   border-left: 3px solid var(--orange);

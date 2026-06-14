@@ -1,7 +1,7 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import {
   LayoutDashboard, Users, Megaphone, Bot, BarChart3,
-  Sparkles, ChevronRight
+  Sparkles
 } from 'lucide-react';
 
 const NAV = [
@@ -13,17 +13,15 @@ const NAV = [
 ];
 
 export default function Sidebar() {
-  const navigate = useNavigate();
-
   return (
     <aside className="sidebar">
-      {/* Logo */}
-      <div className="sidebar-logo">
+      {/* Logo — clicking navigates to dashboard */}
+      <Link to="/" className="sidebar-logo sidebar-logo-link">
         <div className="sidebar-logo-text">
           Xeno<span>.</span>CRM
         </div>
         <div className="sidebar-logo-sub">AI-Native Platform</div>
-      </div>
+      </Link>
 
       {/* Nav */}
       <nav className="sidebar-nav">
@@ -43,7 +41,7 @@ export default function Sidebar() {
 
       {/* AI Suggestions callout */}
       <div className="sidebar-footer">
-        <div className="sidebar-ai-badge" onClick={() => navigate('/ai')}>
+        <Link to="/ai" className="sidebar-ai-badge">
           <div className="sidebar-ai-badge-label">
             <Sparkles size={10} />
             AI Insights
@@ -51,7 +49,7 @@ export default function Sidebar() {
           <div className="sidebar-ai-badge-text">
             Suggestions ready →
           </div>
-        </div>
+        </Link>
       </div>
     </aside>
   );

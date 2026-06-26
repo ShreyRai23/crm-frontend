@@ -116,12 +116,12 @@ function LandingNav() {
 
   return (
     <nav className={`lp-nav${scrolled ? ' lp-nav--scrolled' : ''}`}>
-      <div className="lp-nav-logo">Xeno<span>.</span>CRM</div>
+      <div className="lp-nav-logo">Kinetics<span>.</span>CRM</div>
       <div className="lp-nav-links">
         <a href="#features" className="lp-nav-link">Features</a>
         <a href="#how" className="lp-nav-link">How it works</a>
         <Link to="/dashboard" className="lp-nav-cta">
-          Enter App <ArrowRight size={14} />
+          Get Started <ArrowRight size={14} />
         </Link>
       </div>
     </nav>
@@ -153,7 +153,7 @@ function Hero() {
         </p>
         <div className="lp-hero-actions">
           <Link to="/dashboard" className="lp-btn-primary">
-            Enter the CRM <ArrowRight size={15} />
+            Get Started <ArrowRight size={15} />
           </Link>
           <a href="#features" className="lp-btn-ghost">Explore features ↓</a>
         </div>
@@ -454,7 +454,7 @@ function CTA() {
         </h2>
         <p className="lp-cta-sub">Gemini-powered · Multi-channel · Real-time analytics</p>
         <Link to="/dashboard" className="lp-btn-primary lp-btn-lg">
-          Enter the CRM <ArrowRight size={17} />
+          Get Started <ArrowRight size={17} />
         </Link>
       </div>
     </section>
@@ -465,8 +465,8 @@ function CTA() {
 function Footer() {
   return (
     <footer className="lp-footer">
-      <div className="lp-footer-logo">Xeno<span>.</span>CRM</div>
-      <div className="lp-footer-sub">AI-Native B2C CRM · Xeno Engineering Assignment</div>
+      <div className="lp-footer-logo">Kinetics<span>.</span>CRM</div>
+      <div className="lp-footer-sub">AI-Native B2C CRM</div>
       <div className="lp-footer-nav">
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/customers">Customers</Link>

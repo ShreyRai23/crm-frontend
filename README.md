@@ -12,6 +12,8 @@
 
 This repository contains the frontend application for the Kinetics AI-Native Mini CRM. It provides an intelligent, fast, and responsive interface allowing brands to segment shoppers, craft personalized campaigns using AI, and track communication performance in real-time.
 
+> 🔗 **Backend Repository:** [ShreyRai23/crm-backend](https://github.com/ShreyRai23/crm-backend)
+
 ## Key Features
 
 *   **AI-Native Audience Builder**: Translate natural language queries into complex data segments instantly.

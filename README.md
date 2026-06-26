@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Xeno Mini CRM - Frontend</h1>
+  <h1>Kinetics Mini CRM - Frontend</h1>
   <p>An AI-Native B2C CRM interface built for modern marketers.</p>
   <p>
     <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
@@ -10,7 +10,7 @@
 
 <br />
 
-This repository contains the frontend application for the Xeno AI-Native Mini CRM. It provides an intelligent, fast, and responsive interface allowing brands to segment shoppers, craft personalized campaigns using AI, and track communication performance in real-time.
+This repository contains the frontend application for the Kinetics AI-Native Mini CRM. It provides an intelligent, fast, and responsive interface allowing brands to segment shoppers, craft personalized campaigns using AI, and track communication performance in real-time.
 
 ## Key Features
 

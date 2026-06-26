@@ -15,10 +15,10 @@ const NAV = [
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      {/* Logo — clicking navigates to dashboard */}
+      {/* Logo */}
       <Link to="/dashboard" className="sidebar-logo sidebar-logo-link">
         <div className="sidebar-logo-text">
-          Xeno<span>.</span>CRM
+          Kinetics<span>.</span>CRM
         </div>
         <div className="sidebar-logo-sub">AI-Native Platform</div>
       </Link>

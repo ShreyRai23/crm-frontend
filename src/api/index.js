@@ -1,5 +1,14 @@
 import client from './client';
 
+// ── Auth ──────────────────────────────────────────────────────────────────────
+export const registerUser = (data) => client.post('/auth/register', data);
+export const loginUser    = (data) => client.post('/auth/login', data);
+export const getMe        = ()     => client.get('/auth/me');
+export const updateMe     = (data) => client.patch('/auth/me', data);
+
+
+
+
 export const getAnalyticsOverview = () => client.get('/analytics/overview');
 export const getRevenueTrend = (months = 12) => client.get(`/analytics/revenue?months=${months}`);
 export const getCampaignPerformance = (limit = 10) => client.get(`/analytics/campaigns?limit=${limit}`);
